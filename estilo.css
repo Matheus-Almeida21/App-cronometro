@@ -30,6 +30,7 @@ h1 {
   justify-content: center;
   align-items: center;
   border: 2px solid #154360;
+  border-radius: 15px;
   box-sizing: border-box;
   padding: 5px;
   background-color: #2c3e50;
@@ -42,12 +43,42 @@ h1 {
 }
 button {
   border: none;
-  background-color: #fff;
+  background-color: transparent;
   color: #154360;
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bolder;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
 }
-button:active {
-  background-color: rgba(255, 255, 255, 0.589);
+[data-start]{
+  background-image: url('./Icons/play.svg');
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+}
+[data-start]:hover{
+  background-image: url('./Icons/play2.svg');
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+}
+[data-pause]{
+  background-image: url('./Icons/pause.svg');
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+}
+[data-pause]:hover{
+  background-image: url('./Icons/pause2.svg');
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+}
+[data-reset]{
+  background-image: url('./Icons/reset.svg');
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+}
+[data-reset]:hover{
+  background-image: url('./Icons/reset2.svg');
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
 }
